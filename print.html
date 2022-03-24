@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js navy">
+<html lang="en" class="sidebar-visible no-js ayu">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -31,7 +31,7 @@
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "navy";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -57,7 +57,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('navy')
+            html.classList.remove('ayu')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -76,7 +76,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">About me</li><li class="chapter-item expanded affix "><li class="part-title">Project</li><li class="chapter-item expanded "><a href="internship/internship-project.html"><strong aria-hidden="true">1.</strong> Internship Project</a></li><li class="chapter-item expanded "><a href="contest/contest-project.html"><strong aria-hidden="true">2.</strong> Contest Project</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Year 1-4 Project</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">3.1.</strong> AI Fall Detector</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.2.</strong> Smart Home Model</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.</strong> Manga Text Cleaner</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.4.</strong> Fire Detector</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.5.</strong> Kin Rai-D App (What to eat)</div></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Project</li><li class="chapter-item expanded "><a href="internship/internship-project.html"><strong aria-hidden="true">1.</strong> Internship Project</a></li><li class="chapter-item expanded "><a href="contest/contest-project.html"><strong aria-hidden="true">2.</strong> Contest Project</a></li><li class="chapter-item expanded "><a href="university/university-project.html"><strong aria-hidden="true">3.</strong> University Project</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="university/ai-fall-detector.html"><strong aria-hidden="true">3.1.</strong> AI Fall Detector</a></li><li class="chapter-item expanded "><a href="university/smart-home-model.html"><strong aria-hidden="true">3.2.</strong> Smart Home Model</a></li><li class="chapter-item expanded "><a href="university/manga-text-cleaner.html"><strong aria-hidden="true">3.3.</strong> Manga Text Cleaner</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.4.</strong> Fire Detector</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.5.</strong> Kin Rai-D App (What to eat)</div></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -97,8 +97,8 @@
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy (default)</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
                         </ul>
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
@@ -141,12 +141,15 @@
 and Contest project.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="internship-project"><a class="header" href="#internship-project">Internship Project</a></h1>
 <p>My internship is about learning how Zigbee Protocol work, design and develops system to work with IoT devices without internet, also create an API to provide ability for user to config how IoT devices should work together in if-then condition.</p>
+<p align="center">
+<img title="" src="internship/../assets/scene-trigger.png" alt="" width="360" data-align="center">
+</p>
 <h1 id="iot-home-automation"><a class="header" href="#iot-home-automation">IoT Home Automation</a></h1>
 <h2 id="table-of-content"><a class="header" href="#table-of-content">Table of Content</a></h2>
 <ul>
 <li><a href="internship/internship-project.html#techology">Technology</a></li>
 <li><a href="internship/internship-project.html#system-design">System Design</a></li>
-<li><a href="internship/internship-project.html#video-demo">Video Demo</a></li>
+<li><a href="internship/internship-project.html#demo-video">Demo Video</a></li>
 </ul>
 <h2 id="techology"><a class="header" href="#techology">Techology</a></h2>
 <p>This is the Technologies that I have used in project.</p>
@@ -160,52 +163,200 @@ and Contest project.</p>
 </ol>
 <h2 id="system-design"><a class="header" href="#system-design">System Design</a></h2>
 <h3 id="overall"><a class="header" href="#overall">Overall</a></h3>
-<p><img src="internship/../assets/overall.png" alt="" /></p>
+<p align="center">
+<img title="" src="internship/../assets/overall.png" alt="" width="720" data-align="center">
+</p>
 <h3 id="system-diagram"><a class="header" href="#system-diagram">System Diagram</a></h3>
-<p><img src="internship/../assets/full%20diagram.png" alt="" /></p>
-<h2 id="video-demo"><a class="header" href="#video-demo">Video Demo</a></h2>
-<p><img src="internship/../assets/videodemo.gif" alt="" /></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="contest-project"><a class="header" href="#contest-project">Contest Project</a></h1>
-<p>The contest is about creating application for logistic. my team has a group of 3 people.</p>
-<p>My team develop mobile app for small store that cannot affort large system to manage stock and cashier. In present day everyone has a smartphone, so we create a POS system that fit in smartphone.</p>
+<p align="center">
+<img title="" src="internship/../assets/full%20diagram.png" alt="" width="720" data-align="center">
+</p>
+<h3 id="data-structure"><a class="header" href="#data-structure">Data Structure</a></h3>
+<p>All data is store in json format.</p>
+<p align="center">
+<img title="" src="internship/../assets/config%20structure.png" alt="" width="720" data-align="center">
+</p>
+<p align="center">
+<img title="" src="internship/../assets/mapping%20and%20buffer%20structure.png" alt="" width="720" data-align="center">
+</p>
+<h3 id="result"><a class="header" href="#result">Result</a></h3>
+<h4 id="software"><a class="header" href="#software">Software</a></h4>
+<p align="center">
+<img title="" src="internship/../assets/program%20demo.png" alt="" width="720" data-align="center">
+</p>
+<h4 id="hardware"><a class="header" href="#hardware">Hardware</a></h4>
+<p align="center">
+<img title="" src="internship/../assets/nanopi%20gateway.jpg" alt="" width="720" data-align="center">
+</p>
+<h2 id="demo-video"><a class="header" href="#demo-video">Demo Video</a></h2>
+<p align="center">
+<img title="" src="internship/../assets/videodemosmall.gif" alt="" width="720" data-align="center">
+</p><div style="break-before: page; page-break-before: always;"></div><h1 id="contest-project"><a class="header" href="#contest-project">Contest Project</a></h1>
+<p>The contest is about creating application for logistic. my team has a group of 3 people, named Trooper Team.</p>
+<p>My team develop mobile app for small store that cannot affort large system to manage stock and cashier. In present day everyone has a smartphone, so we create a POS system that fit in smartphone with barcode scanner feature.</p>
+<p><img src="contest/../assets/2nd%20runner%20up.jpg" alt="" /></p>
 <h1 id="cashier-and-stock-management"><a class="header" href="#cashier-and-stock-management">Cashier and Stock Management</a></h1>
+<p>The project is hosting on github, <a href="https://github.com/snoymy/Phone-Cashier-and-Stock-Checkment">link</a>.</p>
 <h2 id="table-of-content-1"><a class="header" href="#table-of-content-1">Table of Content</a></h2>
 <ul>
-<li><a href="contest/contest-project.html#techology">Technology</a></li>
-<li><a href="contest/contest-project.html#application-ui-and-feature">Application UI and Feature</a></li>
-<li><a href="contest/contest-project.html#video-demo">Video Demo</a></li>
+<li><a href="contest/contest-project.html#application-ui">Application UI</a></li>
+<li><a href="contest/contest-project.html#demo-video">Demo Video</a></li>
 </ul>
-<h2 id="techology-1"><a class="header" href="#techology-1">Techology</a></h2>
-<p>This is the Technologies that I have used in project.</p>
-<ol>
-<li>React-Native</li>
-</ol>
-<h2 id="application-ui-and-feature"><a class="header" href="#application-ui-and-feature">Application UI and Feature</a></h2>
+<h2 id="application-ui"><a class="header" href="#application-ui">Application UI</a></h2>
 <h3 id="login-page"><a class="header" href="#login-page">Login Page</a></h3>
+<p align="center">
 <img title="" src="contest/../assets/loginpage.jpg" alt="" width="250">
+</p>
 <h3 id="home-page"><a class="header" href="#home-page">Home Page</a></h3>
+<p align="center">
 <img title="" src="contest/../assets/home.jpg" alt="" width="250">
+</p>
 <h3 id="profile-page"><a class="header" href="#profile-page">Profile Page</a></h3>
+<p align="center">
 <img title="" src="contest/../assets/profile.jpg" alt="" width="250">
+</p>
 <h3 id="stock-mode-page"><a class="header" href="#stock-mode-page">Stock Mode Page</a></h3>
+<p align="center">
 <img title="" src="contest/../assets/stock.jpg" alt="" width="250">
+</p>
 <h3 id="add-stock-page"><a class="header" href="#add-stock-page">Add Stock Page</a></h3>
+<p align="center">
 <img title="" src="contest/../assets/add.jpg" alt="" width="250">
 <img title="" src="contest/../assets/sum.jpg" alt="" width="250">
+</p>
 <h3 id="remove-stock-page"><a class="header" href="#remove-stock-page">Remove Stock Page</a></h3>
+<p align="center">
 <img title="" src="contest/../assets/remove.jpg" alt="" width="250">
 <img title="" src="contest/../assets/sum.jpg" alt="" width="250">
+</p>
 <h3 id="register-product-page"><a class="header" href="#register-product-page">Register Product Page</a></h3>
+<p align="center">
 <img title="" src="contest/../assets/reg.jpg" alt="" width="250">
+</p>
 <h3 id="order-stock-page"><a class="header" href="#order-stock-page">Order Stock Page</a></h3>
+<p align="center">
 <img title="" src="contest/../assets/order.jpg" alt="" width="250">
 <img title="" src="contest/../assets/orderpop.jpg" alt="" width="250">
+</p>
 <h3 id="cashier-mode-page"><a class="header" href="#cashier-mode-page">Cashier Mode Page</a></h3>
+<p align="center">
 <img title="" src="contest/../assets/cash.jpg" alt="" width="250">
 <img title="" src="contest/../assets/cashsum.jpg" alt="" width="250">
 <img title="" src="contest/../assets/cashqr.jpg" alt="" width="250">
-<h2 id="video-demo-1"><a class="header" href="#video-demo-1">Video Demo</a></h2>
-
+</p>
+<h2 id="demo-video-1"><a class="header" href="#demo-video-1">Demo Video</a></h2>
+<h3 id="register-product"><a class="header" href="#register-product">Register Product</a></h3>
+<p align="center">
+<img title="" src="contest/../assets/mobiledemo3.gif" alt="" width="720">
+</p>
+<h3 id="view-product-detail"><a class="header" href="#view-product-detail">View Product Detail</a></h3>
+<p align="center">
+<img title="" src="contest/../assets/mobiledemo2.gif" alt="" width="720">
+</p>
+<h3 id="cashier-scanner"><a class="header" href="#cashier-scanner">Cashier Scanner</a></h3>
+<p align="center">
+<img title="" src="contest/../assets/mobiledemo4.gif" alt="" width="720">
+</p>
+<h3 id="cashier-summary-and-qr-code-for-mobile-banking"><a class="header" href="#cashier-summary-and-qr-code-for-mobile-banking">Cashier Summary and QR Code for mobile banking</a></h3>
+<p align="center">
+<img title="" src="contest/../assets/mobiledemo5.gif" alt="" width="720">
+</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="university-project"><a class="header" href="#university-project">University Project</a></h1>
+<p>These are some of projects that I have done while I study in Computer Engineer.</p>
+<h2 id="project"><a class="header" href="#project">Project</a></h2>
+<ul>
+<li><a href="university/./ai-fall-detector.html">AI Fall Detector</a></li>
+<li><a href="university/./smart-home-model.html">Smart Home Model</a></li>
+<li><a href="university/./manga-text-cleaner.html">Manga Text Cleaner</a></li>
+<li><a href="university/">Fire Detector</a></li>
+<li><a href="university/">Kin Rai-D App (What to eat)</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ai-fall-detector"><a class="header" href="#ai-fall-detector">AI Fall Detector</a></h1>
+<p>This project use MediaPipe for placing landmarks on body then take the landmarks data into Tensorflow to learn how each landmark moving.</p>
+<p>The project is hosting on github, <a href="https://github.com/snoymy/AI_fall_detection">link</a>.</p>
+<h2 id="table-of-content-2"><a class="header" href="#table-of-content-2">Table of Content</a></h2>
+<ul>
+<li><a href="university/ai-fall-detector.html#model">Model</a></li>
+<li><a href="university/ai-fall-detector.html#video-demo">Video Demo</a></li>
+</ul>
+<h2 id="model"><a class="header" href="#model">Model</a></h2>
+<p align="center">
+<img title="" src="university/../assets/model_plot.png" alt="" width="360">
+</p>
+<h2 id="video-demo"><a class="header" href="#video-demo">Video Demo</a></h2>
+<p align="center">
+<img title="" src="university/../assets/fall.gif" alt="" width="720">
+</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="smart-home-model"><a class="header" href="#smart-home-model">Smart Home Model</a></h1>
+<p>Smart Home Model using STM32 microcontroller with sensor to control light or fan in house.</p>
+<p align="center">
+<img title="" src="university/../assets/house.png" alt="" width="360">
+</p>
+<h2 id="table-of-content-3"><a class="header" href="#table-of-content-3">Table of Content</a></h2>
+<ul>
+<li><a href="university/smart-home-model.html#architecture-design">Architecture Design</a></li>
+<li><a href="university/smart-home-model.html#circuit-design">Circuit Design</a></li>
+</ul>
+<h2 id="architecture-design"><a class="header" href="#architecture-design">Architecture Design</a></h2>
+<p align="center">
+<img title="" src="university/../assets/architectureboard.png" alt="" width="480">
+</p>
+<h2 id="circuit-design"><a class="header" href="#circuit-design">Circuit Design</a></h2>
+<h3 id="fan"><a class="header" href="#fan">Fan</a></h3>
+<p align="center">
+<img title="" src="university/../assets/motor.png" alt="" width="360">
+</p>
+<p align="center">
+<img title="" src="university/../assets/termo.png" alt="" height="240">
+<img title="" src="university/../assets/motorhard.png" alt="" height="240">
+</p>
+<h3 id="light"><a class="header" href="#light">Light</a></h3>
+<p align="center">
+<img title="" src="university/../assets/houselight.png" alt="" width="360">
+</p>
+<p align="center">
+<img title="" src="university/../assets/ultra.png" alt="" height="240">
+<img title="" src="university/../assets/lightled.png" alt="" height="240">
+</p>
+<h3 id="lamp"><a class="header" href="#lamp">Lamp</a></h3>
+<p align="center">
+<img title="" src="university/../assets/lamp.png" alt="" width="360">
+</p>
+<p align="center">
+<img title="" src="university/../assets/ldr.png" alt="" height="240">
+<img title="" src="university/../assets/lampled.png" alt="" height="240">
+</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="manga-text-cleaner"><a class="header" href="#manga-text-cleaner">Manga Text Cleaner</a></h1>
+<p>This project use OpenCV and Tesseract OCR to detect text and balloon box then wipe it out.</p>
+<h2 id="table-of-content-4"><a class="header" href="#table-of-content-4">Table of Content</a></h2>
+<ul>
+<li><a href="university/manga-text-cleaner.html#flow-diagram">Flow Diagram</a></li>
+<li><a href="university/manga-text-cleaner.html#output-in-step">Output in Step</a></li>
+</ul>
+<h2 id="flow-diagram"><a class="header" href="#flow-diagram">Flow Diagram</a></h2>
+<p align="center">
+<img title="" src="university/../assets/mangaflow.png" alt="" width="360">
+</p>
+<h2 id="output-in-step"><a class="header" href="#output-in-step">Output in Step</a></h2>
+<h3 id="find-text-balloon-by-finding-circle-and-squre-shape"><a class="header" href="#find-text-balloon-by-finding-circle-and-squre-shape">Find text balloon by finding circle and squre shape</a></h3>
+<p align="center">
+<img title="" src="university/../assets/edge.png" alt="" width="720">
+</p>
+<h3 id="find-word-to-comfirm-the-shape-that-have-found-is-text-balloon"><a class="header" href="#find-word-to-comfirm-the-shape-that-have-found-is-text-balloon">Find word to comfirm the shape that have found is text balloon</a></h3>
+<p align="center">
+<img title="" src="university/../assets/word.png" alt="" width="720">
+</p>
+<h3 id="fill-color-only-shape-that-have-text-in-side-use-pink-color-to-fill-for-example"><a class="header" href="#fill-color-only-shape-that-have-text-in-side-use-pink-color-to-fill-for-example">Fill color only shape that have text in side. (Use pink color to fill for example)</a></h3>
+<p align="center">
+<img title="" src="university/../assets/fill.png" alt="" width="720">
+</p>
+<h3 id="white-fill-color-version"><a class="header" href="#white-fill-color-version">White fill color version</a></h3>
+<p align="center">
+<img title="" src="university/../assets/whitefill.png" alt="" width="360">
+</p>
+<h3 id="in-case-if-we-just-find-text-only-the-result-not-so-good"><a class="header" href="#in-case-if-we-just-find-text-only-the-result-not-so-good">In case if we just find text only, the result not so good.</a></h3>
+<p align="center">
+<img title="" src="university/../assets/only-text.png" alt="" width="720">
+</p>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
