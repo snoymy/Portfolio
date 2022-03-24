@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Internship Project</title>
+        <title>Smart Home Model</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Project</li><li class="chapter-item expanded "><a href="../internship/internship-project.html" class="active"><strong aria-hidden="true">1.</strong> Internship Project</a></li><li class="chapter-item expanded "><a href="../contest/contest-project.html"><strong aria-hidden="true">2.</strong> Contest Project</a></li><li class="chapter-item expanded "><a href="../university/university-project.html"><strong aria-hidden="true">3.</strong> University Project</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../university/ai-fall-detector.html"><strong aria-hidden="true">3.1.</strong> AI Fall Detector</a></li><li class="chapter-item expanded "><a href="../university/smart-home-model.html"><strong aria-hidden="true">3.2.</strong> Smart Home Model</a></li><li class="chapter-item expanded "><a href="../university/manga-text-cleaner.html"><strong aria-hidden="true">3.3.</strong> Manga Text Cleaner</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.4.</strong> Fire Detector</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.5.</strong> Kin Rai-D App (What to eat)</div></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Project</li><li class="chapter-item expanded "><a href="../internship/internship-project.html"><strong aria-hidden="true">1.</strong> Internship Project</a></li><li class="chapter-item expanded "><a href="../contest/contest-project.html"><strong aria-hidden="true">2.</strong> Contest Project</a></li><li class="chapter-item expanded "><a href="../university/university-project.html"><strong aria-hidden="true">3.</strong> University Project</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../university/ai-fall-detector.html"><strong aria-hidden="true">3.1.</strong> AI Fall Detector</a></li><li class="chapter-item expanded "><a href="../university/smart-home-model.html" class="active"><strong aria-hidden="true">3.2.</strong> Smart Home Model</a></li><li class="chapter-item expanded "><a href="../university/manga-text-cleaner.html"><strong aria-hidden="true">3.3.</strong> Manga Text Cleaner</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.4.</strong> Fire Detector</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.5.</strong> Kin Rai-D App (What to eat)</div></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -134,66 +134,54 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="internship-project"><a class="header" href="#internship-project">Internship Project</a></h1>
-<p>My internship is about learning how Zigbee Protocol work, design and develops system to work with IoT devices without internet, also create an API to provide ability for user to config how IoT devices should work together in if-then condition.</p>
+                        <h1 id="smart-home-model"><a class="header" href="#smart-home-model">Smart Home Model</a></h1>
+<p>Smart Home Model using STM32 microcontroller with sensor to control light or fan in house.</p>
 <p align="center">
-<img title="" src="../assets/scene-trigger.png" alt="" width="360" data-align="center">
+<img title="" src="../assets/house.png" alt="" width="360">
 </p>
-<h1 id="iot-home-automation"><a class="header" href="#iot-home-automation">IoT Home Automation</a></h1>
 <h2 id="table-of-content"><a class="header" href="#table-of-content">Table of Content</a></h2>
 <ul>
-<li><a href="#techology">Technology</a></li>
-<li><a href="#system-design">System Design</a></li>
-<li><a href="#demo-video">Demo Video</a></li>
+<li><a href="#architecture-design">Architecture Design</a></li>
+<li><a href="#circuit-design">Circuit Design</a></li>
 </ul>
-<h2 id="techology"><a class="header" href="#techology">Techology</a></h2>
-<p>This is the Technologies that I have used in project.</p>
-<ol>
-<li>Zigbee Protocol</li>
-<li>MQTT Protocol</li>
-<li>Zigbee2MQTT</li>
-<li>NanoPi NEO</li>
-<li>Gio-dot Z-Bee Duo</li>
-<li>Linux Platform</li>
-</ol>
-<h2 id="system-design"><a class="header" href="#system-design">System Design</a></h2>
-<h3 id="overall"><a class="header" href="#overall">Overall</a></h3>
+<h2 id="architecture-design"><a class="header" href="#architecture-design">Architecture Design</a></h2>
 <p align="center">
-<img title="" src="../assets/overall.png" alt="" width="720" data-align="center">
+<img title="" src="../assets/architectureboard.png" alt="" width="480">
 </p>
-<h3 id="system-diagram"><a class="header" href="#system-diagram">System Diagram</a></h3>
+<h2 id="circuit-design"><a class="header" href="#circuit-design">Circuit Design</a></h2>
+<h3 id="fan"><a class="header" href="#fan">Fan</a></h3>
 <p align="center">
-<img title="" src="../assets/full%20diagram.png" alt="" width="720" data-align="center">
-</p>
-<h3 id="data-structure"><a class="header" href="#data-structure">Data Structure</a></h3>
-<p>All data is store in json format.</p>
-<p align="center">
-<img title="" src="../assets/config%20structure.png" alt="" width="720" data-align="center">
+<img title="" src="../assets/motor.png" alt="" width="360">
 </p>
 <p align="center">
-<img title="" src="../assets/mapping%20and%20buffer%20structure.png" alt="" width="720" data-align="center">
+<img title="" src="../assets/termo.png" alt="" height="240">
+<img title="" src="../assets/motorhard.png" alt="" height="240">
 </p>
-<h3 id="result"><a class="header" href="#result">Result</a></h3>
-<h4 id="software"><a class="header" href="#software">Software</a></h4>
+<h3 id="light"><a class="header" href="#light">Light</a></h3>
 <p align="center">
-<img title="" src="../assets/program%20demo.png" alt="" width="720" data-align="center">
+<img title="" src="../assets/houselight.png" alt="" width="360">
 </p>
-<h4 id="hardware"><a class="header" href="#hardware">Hardware</a></h4>
 <p align="center">
-<img title="" src="../assets/nanopi%20gateway.jpg" alt="" width="720" data-align="center">
+<img title="" src="../assets/ultra.png" alt="" height="240">
+<img title="" src="../assets/lightled.png" alt="" height="240">
 </p>
-<h2 id="demo-video"><a class="header" href="#demo-video">Demo Video</a></h2>
+<h3 id="lamp"><a class="header" href="#lamp">Lamp</a></h3>
 <p align="center">
-<img title="" src="../assets/videodemosmall.gif" alt="" width="720" data-align="center">
+<img title="" src="../assets/lamp.png" alt="" width="360">
 </p>
+<p align="center">
+<img title="" src="../assets/ldr.png" alt="" height="240">
+<img title="" src="../assets/lampled.png" alt="" height="240">
+</p>
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../introduction.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../university/ai-fall-detector.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                            <a rel="next" href="../contest/contest-project.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../university/manga-text-cleaner.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
@@ -202,10 +190,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../introduction.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../university/ai-fall-detector.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                    <a rel="next" href="../contest/contest-project.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../university/manga-text-cleaner.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js navy">
+<html lang="en" class="sidebar-visible no-js ayu">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -30,7 +30,7 @@
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "navy";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -56,7 +56,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('navy')
+            html.classList.remove('ayu')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">About me</li><li class="chapter-item expanded affix "><li class="part-title">Project</li><li class="chapter-item expanded "><a href="../internship/internship-project.html"><strong aria-hidden="true">1.</strong> Internship Project</a></li><li class="chapter-item expanded "><a href="../contest/contest-project.html" class="active"><strong aria-hidden="true">2.</strong> Contest Project</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> Year 1-4 Project</div></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">3.1.</strong> AI Fall Detector</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.2.</strong> Smart Home Model</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.</strong> Manga Text Cleaner</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.4.</strong> Fire Detector</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.5.</strong> Kin Rai-D App (What to eat)</div></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Project</li><li class="chapter-item expanded "><a href="../internship/internship-project.html"><strong aria-hidden="true">1.</strong> Internship Project</a></li><li class="chapter-item expanded "><a href="../contest/contest-project.html" class="active"><strong aria-hidden="true">2.</strong> Contest Project</a></li><li class="chapter-item expanded "><a href="../university/university-project.html"><strong aria-hidden="true">3.</strong> University Project</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../university/ai-fall-detector.html"><strong aria-hidden="true">3.1.</strong> AI Fall Detector</a></li><li class="chapter-item expanded "><a href="../university/smart-home-model.html"><strong aria-hidden="true">3.2.</strong> Smart Home Model</a></li><li class="chapter-item expanded "><a href="../university/manga-text-cleaner.html"><strong aria-hidden="true">3.3.</strong> Manga Text Cleaner</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.4.</strong> Fire Detector</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.5.</strong> Kin Rai-D App (What to eat)</div></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -96,8 +96,8 @@
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy (default)</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
                         </ul>
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
@@ -135,45 +135,75 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="contest-project"><a class="header" href="#contest-project">Contest Project</a></h1>
-<p>The contest is about creating application for logistic. my team has a group of 3 people.</p>
-<p>My team develop mobile app for small store that cannot affort large system to manage stock and cashier. In present day everyone has a smartphone, so we create a POS system that fit in smartphone.</p>
+<p>The contest is about creating application for logistic. my team has a group of 3 people, named Trooper Team.</p>
+<p>My team develop mobile app for small store that cannot affort large system to manage stock and cashier. In present day everyone has a smartphone, so we create a POS system that fit in smartphone with barcode scanner feature.</p>
+<p><img src="../assets/2nd%20runner%20up.jpg" alt="" /></p>
 <h1 id="cashier-and-stock-management"><a class="header" href="#cashier-and-stock-management">Cashier and Stock Management</a></h1>
+<p>The project is hosting on github, <a href="https://github.com/snoymy/Phone-Cashier-and-Stock-Checkment">link</a>.</p>
 <h2 id="table-of-content"><a class="header" href="#table-of-content">Table of Content</a></h2>
 <ul>
-<li><a href="#techology">Technology</a></li>
-<li><a href="#application-ui-and-feature">Application UI and Feature</a></li>
-<li><a href="#video-demo">Video Demo</a></li>
+<li><a href="#application-ui">Application UI</a></li>
+<li><a href="#demo-video">Demo Video</a></li>
 </ul>
-<h2 id="techology"><a class="header" href="#techology">Techology</a></h2>
-<p>This is the Technologies that I have used in project.</p>
-<ol>
-<li>React-Native</li>
-</ol>
-<h2 id="application-ui-and-feature"><a class="header" href="#application-ui-and-feature">Application UI and Feature</a></h2>
+<h2 id="application-ui"><a class="header" href="#application-ui">Application UI</a></h2>
 <h3 id="login-page"><a class="header" href="#login-page">Login Page</a></h3>
+<p align="center">
 <img title="" src="../assets/loginpage.jpg" alt="" width="250">
+</p>
 <h3 id="home-page"><a class="header" href="#home-page">Home Page</a></h3>
+<p align="center">
 <img title="" src="../assets/home.jpg" alt="" width="250">
+</p>
 <h3 id="profile-page"><a class="header" href="#profile-page">Profile Page</a></h3>
+<p align="center">
 <img title="" src="../assets/profile.jpg" alt="" width="250">
+</p>
 <h3 id="stock-mode-page"><a class="header" href="#stock-mode-page">Stock Mode Page</a></h3>
+<p align="center">
 <img title="" src="../assets/stock.jpg" alt="" width="250">
+</p>
 <h3 id="add-stock-page"><a class="header" href="#add-stock-page">Add Stock Page</a></h3>
+<p align="center">
 <img title="" src="../assets/add.jpg" alt="" width="250">
 <img title="" src="../assets/sum.jpg" alt="" width="250">
+</p>
 <h3 id="remove-stock-page"><a class="header" href="#remove-stock-page">Remove Stock Page</a></h3>
+<p align="center">
 <img title="" src="../assets/remove.jpg" alt="" width="250">
 <img title="" src="../assets/sum.jpg" alt="" width="250">
+</p>
 <h3 id="register-product-page"><a class="header" href="#register-product-page">Register Product Page</a></h3>
+<p align="center">
 <img title="" src="../assets/reg.jpg" alt="" width="250">
+</p>
 <h3 id="order-stock-page"><a class="header" href="#order-stock-page">Order Stock Page</a></h3>
+<p align="center">
 <img title="" src="../assets/order.jpg" alt="" width="250">
 <img title="" src="../assets/orderpop.jpg" alt="" width="250">
+</p>
 <h3 id="cashier-mode-page"><a class="header" href="#cashier-mode-page">Cashier Mode Page</a></h3>
+<p align="center">
 <img title="" src="../assets/cash.jpg" alt="" width="250">
 <img title="" src="../assets/cashsum.jpg" alt="" width="250">
 <img title="" src="../assets/cashqr.jpg" alt="" width="250">
-<h2 id="video-demo"><a class="header" href="#video-demo">Video Demo</a></h2>
+</p>
+<h2 id="demo-video"><a class="header" href="#demo-video">Demo Video</a></h2>
+<h3 id="register-product"><a class="header" href="#register-product">Register Product</a></h3>
+<p align="center">
+<img title="" src="../assets/mobiledemo3.gif" alt="" width="720">
+</p>
+<h3 id="view-product-detail"><a class="header" href="#view-product-detail">View Product Detail</a></h3>
+<p align="center">
+<img title="" src="../assets/mobiledemo2.gif" alt="" width="720">
+</p>
+<h3 id="cashier-scanner"><a class="header" href="#cashier-scanner">Cashier Scanner</a></h3>
+<p align="center">
+<img title="" src="../assets/mobiledemo4.gif" alt="" width="720">
+</p>
+<h3 id="cashier-summary-and-qr-code-for-mobile-banking"><a class="header" href="#cashier-summary-and-qr-code-for-mobile-banking">Cashier Summary and QR Code for mobile banking</a></h3>
+<p align="center">
+<img title="" src="../assets/mobiledemo5.gif" alt="" width="720">
+</p>
 
                     </main>
 
@@ -181,6 +211,9 @@
                         <!-- Mobile navigation buttons -->
                             <a rel="prev" href="../internship/internship-project.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../university/university-project.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
                     </nav>
@@ -190,6 +223,9 @@
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                     <a rel="prev" href="../internship/internship-project.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../university/university-project.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 
